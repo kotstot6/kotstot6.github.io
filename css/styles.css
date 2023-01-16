@@ -11435,15 +11435,7 @@ section.resume-section .resume-section-content {
   }
 }
 
-.page-link a {
-  color: inherit;
-  border: none;
-  display: inline;
-}
-
-.page-link a:hover {
+.scroll-link {
   text-decoration: none;
-  font-weight: bold;
-  cursor: pointer;
-  background-color: inherit;
+  color: inherit;
 }
