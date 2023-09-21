@@ -14,6 +14,7 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -42,18 +43,18 @@
                     <h1 class="mb-0">
                         Kyle
                         <span class="text-primary">Otstot</span>
-                        &#128104;&#8205;&#128300; &#127925;
+                        &#128104;&#8205;&#128300;
                     </h1>
                     <div class="subheading mb-5">
                         Machine Learning Engineer Intern @ Spotify · Tempe, AZ ·
                         <a href="mailto:kotstot@asu.edu">kotstot@asu.edu</a>
                     </div>
                     <p class="lead mb-5">
-                      Hello world &#x1F44B; welcome to my website! I am 22 years old and completing my fourth year at Arizona State University, studying computer science at the Masters level and doing research in deep learning model robustness.
-                      Through my research, coursework, and personal projects, I have gained experience in a range of machine learning (ML) fields, including <em>computer vision</em>, <em>natural language processing</em>, <em>recommendation systems</em>, and <em>time-series forecasting</em>.
-                      Currently, I work for Spotify's personalization mission as a machine learning engineer intern. I also work as a graduate research assistant for Sankar Lab of ASU, where we curate robust methods for the common ML security problems of domain adaptation and generative adversarial network (GAN) training instability, specifically in the computer vision realm.
+                      Hello world &#x1F44B; welcome to my website! I am 23 years old and just graduated from Arizona State University with a MS degree in computer science.
+                      Through my research, coursework, and personal projects, I have gained experience in a range of machine learning (ML) fields, including <em>computer vision</em>, <em>natural language processing</em>, <em>recommender systems</em>, and <em>time-series forecasting</em>.
+                      Recently, I worked for Spotify's personalization mission as a machine learning engineer intern, where I developed a new dataset filtering technique that improved the online performance of a model responsible for playlist track recommendation. I also worked as a graduate research assistant for Sankar Lab of ASU, where we curate robust methods for the common ML security problems of domain adaptation and generative adversarial network (GAN) training instability, specifically in the computer vision realm.
                      Hope you enjoy my website, and don't forget to connect with me on social media! (links below)
-                      <b>Last updated: 01/23</b>
+                      <b>Last updated: 09/23</b>
                     </p>
                     <div class="social-icons">
                       <a class="social-icon" href="work/resume.pdf" target="_blank"><i class="fab fa-readme"></i></a>
@@ -74,14 +75,20 @@
                             <h3 class="mb-0">Master of Science, Computer Science &#x1F5A5;</h3>
                             <div class="subheading mb-3">Arizona State University</div>
 
-                            <p><b>Thesis:</b> Towards Eliminating GAN Training Failures with Tunable Dual Objectives</p>
+                            <p><b>Thesis:</b>
+                              <a class="scroll-link" href="#masters-thesis">Towards Addressing GAN Training Instabilities: Dual-Objective GANs with Tunable Parameters
+                                <svg class="bi bi-arrow-up-right-square" width="15px" height="15px" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"></path>
+                                  <path fill-rule="evenodd" d="M10.5 5h-4a.5.5 0 0 0 0 1h2.793l-4.147 4.146a.5.5 0 0 0 .708.708L10 6.707V9.5a.5.5 0 0 0 1 0v-4a.5.5 0 0 0-.5-.5z"></path>
+                                </svg></a>
+                            </p>
 
                             <p><b>Key Courses:</b> Data Mining, Statistical Machine Learning, Semantic Web Mining, Data Visualization, ML Security & Fairness, Cloud Computing</p>
 
                             <p><b>GPA:</b> 4.0</p>
 
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2022 - May 2023</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2022 - July 2023</span></div>
                     </div>
 
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -152,16 +159,40 @@
                     <h2 class="mb-5">Experience &#128104;&#8205;&#128187;</h2>
 
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                      <div class="flex-grow-1">
+                          <h3 class="mb-0">Machine Learning Engineer Intern &#127926;</h3>
+                          <div class="subheading mb-3">Spotify - Personalization Mission</div>
+                          <p>For this internship, I worked on improving a deep learning classifier that contributes to the "personalization" of playlists, i.e. scoring of tracks tailored to the user.</p>
+                          <ul>
+                            <li>I proposed a novel dataset filtering method to improve the aforementioned classification model, which increased percentage of users with long listens by 0.7%.</li>
+                            <li>
+                              In doing so, I designed an experiment for Bayesian-optimizing the filtering method, and created a Ray pipeline that reduced the model training runtime from hours to seconds.
+                            </li>
+                            <li>Additionally, I contributed to a Kubeflow training pipeline deployed in production for an A/B test, which proved to be a successful test (see first bullet).</li>
+                          </ul>
+                      </div>
+                      <div class="flex-shrink-0"><span class="text-primary">June 2023 - September 2023</span></div>
+                  </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Graduate Research Assistant &#128104;&#8205;&#128300;</h3>
                             <div class="subheading mb-3">Sankar Lab - Arizona State University</div>
                             <p>Having completed my Bachelor's degrees in Spring 2022, I continued to work under Dr. Lalitha Sankar in her lab with a new project on GAN training stability.</p>
                             <ul>
-                              <li>The summer before graduate school, I began a new research project with other members in Sankar Lab, which was funded for me by the 2022 SURI program. In this project, we focus on the use of alternative objective functions (i.e., not binary cross entropy) for generative adversarial network (GAN) training in order to help stabilize convergence and lessen the network's performance dependency on random weight initializations. In doing so, we consider <em>alpha-loss</em>, a family of tunable loss functions that encapsulate cross entropy loss and other notable losses. Over the summer, we were able to empirically (and a bit theoretically) show that some instances of alpha-loss help reduce the common GAN training threats of vanishing gradients, exploding gradients, and mode collapse. Experiments were primarily done on 2D toy datasets with fully-connected generator and discriminator models.</li>
-                              <li>At the beginning of the 2022-2023 school year, I was officially appointed as an ASU <b><em>Graduate Research Assistant (GRA)</em></b> in order to continue my research on GAN training instabilities. Having first observed performance gains on the 2D toy datasets, we then moved to the benchmark image datasets of Stacked MNIST and Celeb-A. In both cases, we consider the use of deep convolutional generative adversarial nets (DCGANs) with state-of-the-art optimization (Adam) and objective functions (least squares, Wasserstein distance, alpha-loss). In doing so, we are currently working on demonstrating that training GANs with alpha-loss is more robust to changes in learning rate and train epochs, compared to the use of other objective functions.</li>
+                              <li>The summer before graduate school, I began a new research project with other members in Sankar Lab, which was funded for me by the <b><em>2022 SURI program</em></b>. In this project, we focus on the use of alternative objective functions (i.e., not binary cross entropy) for generative adversarial network (GAN) training in order to help stabilize convergence and lessen the network's performance dependency on random weight initializations. In doing so, we consider <em>alpha-loss</em>, a family of tunable loss functions that encapsulate cross entropy loss and other notable losses. Over the summer, we were able to empirically (and a bit theoretically) show that some instances of alpha-loss help reduce the common GAN training threats of vanishing gradients, exploding gradients, and mode collapse. Experiments were primarily done on 2D toy datasets with fully-connected generator and discriminator models.</li>
+                              <li>At the beginning of the 2022-2023 school year, I was officially appointed as an ASU <b><em>Graduate Research Assistant (GRA)</em></b> in order to continue my research on GAN training instabilities. Having first observed performance gains on the 2D toy datasets, we then moved to the benchmark image datasets of Stacked MNIST, Celeb-A, and LSUN.
+                                In both cases, we consider the use of deep convolutional generative adversarial nets (DCGANs) with state-of-the-art optimization (Adam) and objective functions (least squares & alpha-loss).
+                                As a result, I co-authored the paper titled
+                                <a class="scroll-link" href="#alpha-gan"><em>\((\alpha_{D}, \alpha_{G})\)-GANs: Addressing GAN Training Instabilities via Dual Objectives</em>
+                                  <svg class="bi bi-arrow-up-right-square" width="15px" height="15px" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"></path>
+                                  <path fill-rule="evenodd" d="M10.5 5h-4a.5.5 0 0 0 0 1h2.793l-4.147 4.146a.5.5 0 0 0 .708.708L10 6.707V9.5a.5.5 0 0 0 1 0v-4a.5.5 0 0 0-.5-.5z"></path>
+                                </svg></a>, which was accepted into the 2023 IEEE International Symposium on Information Theory (ISIT) conference and New Frontiers in Adversarial Machine Learning workshop at the 2023 International Conference on Machine Learning (ICML).
+                              </li>
                             </ul>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">June 2022 - Present</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">June 2022 - May 2023</span></div>
                     </div>
 
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -242,15 +273,34 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Projects &#x1F4CA;</h2>
 
+                    <div id="masters-thesis" class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                      <div class="flex-grow-1">
+                          <img style="max-height:250px;max-width:90%;margin: 0px 0px 10px 0px;"src="assets/img/masters_thesis.png">
+                          <h3 class="mb-0">Towards Addressing GAN Training Instabilities: Dual-Objective GANs with Tunable Parameters &#127899;  &#129295;</h3>
+                          <div class="subheading mb-3">Robust Generative Models, Convolutional Nets, Fréchet Inception Distance</div>
+                          <p>
+                            This thesis introduces the \((\alpha_{D}, \alpha_{G})\)-GAN, a parameterized class of dual-objective GANs, as an alternative approach to the standard vanilla GAN.
+                            The \((\alpha_{D}, \alpha_{G})\)-GAN formulation, inspired by \(\alpha\)-loss, allows practitioners to tune the parameters \((\alpha_{D}, \alpha_{G}) \in [0,\infty)^{2}\) to provide a more stable training process. The objectives for the generator and discriminator in \((\alpha_{D}, \alpha_{G})\)-GAN are derived, and the advantages of using these objectives are investigated. In particular, the optimization trajectory of the generator is found to be influenced by the choice of \(\alpha_{D}\) and \(\alpha_{G}\).
+                            Empirical evidence is presented through experiments conducted on various datasets, including the 2D Gaussian Mixture Ring, Celeb-A image dataset, and LSUN Classroom image dataset. Performance metrics such as mode coverage and Fréchet Inception Distance (FID) are used to evaluate the effectiveness of the \((\alpha_{D}, \alpha_{G})\)-GAN compared to the vanilla GAN and state-of-the-art Least Squares GAN (LSGAN). The experimental results demonstrate that tuning \(\alpha_{D} < 1\) leads to improved stability, robustness to hyperparameter choice, and competitive performance compared to LSGAN.
+                          </p>
+                          <p><a href="work/masters_thesis_paper.pdf" target="_blank">Paper</a> &nbsp; · &nbsp; <a href="work/masters_thesis_presentation.pdf" target="_blank">Presentation</a> &nbsp; · &nbsp; <a href="https://github.com/SankarLab/AlphaGan-Papers-Results" target="_blank">Github</a></p>
+                      </div>
+                      <div class="flex-shrink-0"><span class="text-primary">February 2023 - June 2023</span></div>
+                  </div>
+
                     <div id="alpha-gan" class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <img style="max-height:250px;max-width:90%;margin: 0px 0px 10px 0px;"src="assets/img/alphagan.png">
-                            <h3 class="mb-0">Towards Addressing GAN Training Instabilities: Dual-Objective GANs with Tunable Parameters &#127899;  &#129295;</h3>
+                            <h3 class="mb-0">\((\alpha_{D}, \alpha_{G})\)-GANs: &#9996; &#x2705; Addressing GAN Training Instabilities via Dual Objectives</h3>
                             <div class="subheading mb-3">Robust Generative Models, Convolutional Nets, Fréchet Inception Distance</div>
                             <p>
-                              In an effort to address the training instabilities of GANs, we introduce a class of dual-objective GANs with different value functions (objectives) for the generator (G) and discriminator (D). In particular, we model each objective using α-loss, a tunable classification loss, to obtain (α_D, α_G)-GANs, parameterized by (α_D, α_G) ∈ [0, ∞)^2. For sufficiently large number of samples and capacities for G and D, we show that the resulting non-zero sum game simplifies to minimizing an f-divergence under appropriate conditions on (α_D, α_G). In the finite sample and capacity setting, we define estimation error to quantify the gap in the generator's performance relative to the optimal setting with infinite samples and obtain upper bounds on this error, showing it to be order optimal under certain conditions. Finally, we highlight the value of tuning (α_D, α_G) in alleviating training instabilities for the synthetic 2D Gaussian mixture ring and the Stacked MNIST datasets.
+                              In an effort to address the training instabilities of GANs, we introduce a class of dual-objective GANs with different value functions (objectives) for the generator (\(G\)) and discriminator (\(D\)).
+                              In particular, we model each objective using \(\alpha\)-loss, a tunable classification loss, to obtain \((\alpha_{D}, \alpha_{G})\)-GANs, parameterized by \((\alpha_{D}, \alpha_{G}) \in [0, \infty)^{2}\).
+                              For sufficiently large number of samples and capacities for \(G\) and \(D\), we show that the resulting non-zero sum game simplifies to minimizing an \(f\)-divergence under appropriate conditions on \((\alpha_{D}, \alpha_{G})\).
+                              In the finite sample and capacity setting, we define estimation error to quantify the gap in the generator's performance relative to the optimal setting with infinite samples and obtain upper bounds on this error, showing it to be order optimal under certain conditions.
+                              Finally, we highlight the value of tuning \((\alpha_{D}, \alpha_{G})\) in alleviating training instabilities for the synthetic 2D Gaussian mixture ring and the Stacked MNIST datasets.
                             </p>
-                            <p><a href="https://arxiv.org/abs/2302.14320" target="_blank">Paper</a> &nbsp; · &nbsp; <a href="https://github.com/SankarLab/AlphaGan-Papers-Results" target="_blank">Github</a></p>
+                            <p><a href="https://arxiv.org/abs/2302.14320" target="_blank">Paper</a> &nbsp; · &nbsp; <a href="work/alpha_gan_poster.pdf" target="_blank">Poster</a> &nbsp; · &nbsp; <a href="https://github.com/SankarLab/AlphaGan-Papers-Results" target="_blank">Github</a></p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">November 2022 - January 2023</span></div>
                     </div>
@@ -318,7 +368,7 @@ noteworthy contributions, including the engineering of two attributes responsibl
 in ML performance, development of a word clustering algorithm that helps the practitioner better understand the relationships between words across categories, and design of a high-performing
 classifier of 88% test accuracy using deep transfer learning and state-of-the-art optimization techniques.
                             </p>
-                            <p><a href="">Paper</a> (Available 8/2023) &nbsp; · &nbsp; <a href="">Github</a> (Available 8/2023) </p>
+                            <p><a href="work/wells_fargo.pdf" target="_blank">Paper</a> &nbsp; · &nbsp; <a href="https://github.com/kotstot6/WellsFargoChallenge" target="_blank">Github</a></p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">June 2022 - July 2022</span></div>
                     </div>
@@ -445,7 +495,7 @@ classifier of 88% test accuracy using deep transfer learning and state-of-the-ar
                     <ul class="fa-ul mb-3">
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <b>Libraries:</b> PyTorch, Tensorflow, NumPy
+                            <b>Libraries:</b> PyTorch, Tensorflow, NumPy, Ray, Kubeflow
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -457,11 +507,11 @@ classifier of 88% test accuracy using deep transfer learning and state-of-the-ar
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <b>Architectures:</b> Dense neural nets (MLPs), CNNs, Residual nets, U-Nets, RNNs (LSTMs, Bi-LSTMs), GANs, VAEs, RBMs, Text transformers (BERT, XLNet, GPT), Vision transformers <em>(novice)</em>, Diffusion models <em>(novice)</em>
+                            <b>Architectures:</b> Dense neural nets (MLPs), CNNs, Wide and deep nets, Residual nets, U-Nets, RNNs (LSTMs, Bi-LSTMs), GANs, VAEs, RBMs, Text transformers (BERT, XLNet, GPT), Vision transformers, Diffusion models
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <b>Datasets:</b> MNIST, Stacked MNIST, Fashion MNIST, MNIST-M, MNIST-C, CIFAR-10/100, CIFAR-10/100-C, CIFAR-10/100-N, Tiny ImageNet, ImageNet, Celeb-A, LSUN, IMDB, MovieLens, Netflix Prize
+                            <b>Datasets:</b> MNIST, Stacked MNIST, Fashion MNIST, MNIST-M, MNIST-C, CIFAR-10/100, CIFAR-10/100-C, CIFAR-10/100-N, Tiny ImageNet, ImageNet, Celeb-A, LSUN, IMDB, MovieLens, Netflix Prize, Spotify Million Playlist
                         </li>
                     </ul>
                     <div class="subheading mb-3">Machine Learning &#x1F916;</div>
@@ -521,7 +571,7 @@ classifier of 88% test accuracy using deep transfer learning and state-of-the-ar
                       </li>
                       <li>
                           <span class="fa-li"><i class="fas fa-check"></i></span>
-                          <b>Server side:</b> PHP, SQL, MySQL, Node.js, Flask
+                          <b>Server side:</b> PHP, SQL, MySQL (GCP, AWS), BigQuery, Node.js, Flask
                       </li>
                     </ul>
                     <div class="subheading mb-3">Miscellaneous Skills &#x1F31F;</div>
